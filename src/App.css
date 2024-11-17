@@ -1,0 +1,94 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  width: 100vw;
+  height: 100vh;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: -30px;
+}
+.scoreboard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.score{
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+.score-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+#token{
+  width: 42px;
+}
+.progress-bar {
+  width: 369px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 15px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background-color: #000000;
+  transition: width 0.3s ease-in-out;
+}
+
+#score1 {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s;
+        font-size: 2em;
+        color: rgb(0, 0, 0);
+        top: 30%;
+        left: 22%;
+        padding: 10px 8px; 
+        font-family: 'Press Start 2P', cursive;
+        background-color: #ECECEC;
+        border-radius: 8px;
+        box-shadow: 0 1px 2.3px rgba(0, 0, 0, 0.25);
+}
+#score2 {
+        position: absolute;
+        font-size: 2em;
+        opacity: 0;
+        font-family: 'Press Start 2P', cursive;
+        transition: opacity 1s;
+        color: rgb(0, 0, 0);
+        top: 65%;
+        left: 18%;
+        padding: 10px 8px; 
+        background-color: #ECECEC;
+        border-radius: 8px;
+        box-shadow: 0 1px 2.3px rgba(0, 0, 0, 0.25);
+}
+#score3 {
+        position: absolute;
+        opacity: 0;
+        font-family: 'Press Start 2P', cursive;
+        transition: opacity 1s;
+        font-size: 2em;
+        color: rgb(0, 0, 0);
+        top: 60%;
+        left: 70%;
+        padding: 10px 8px; 
+        background-color: #ECECEC;
+        border-radius: 8px;
+        box-shadow: 0 1px 2.3px rgba(0, 0, 0, 0.25);
+}
